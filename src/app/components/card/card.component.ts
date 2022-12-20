@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Result } from '../../models/character';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+  @Input() character: any
+
+  constructor() {}
 
 }
