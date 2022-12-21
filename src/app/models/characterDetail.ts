@@ -5,8 +5,8 @@ export interface ICharacterDetail {
   species:  string;
   type:     string;
   gender:   string;
-  origin:   Location;
-  location: Location;
+  origin:   ILocation;
+  location: ILocation;
   image:    string;
   episode:  string[];
   url:      string;
@@ -24,8 +24,8 @@ export class CharacterDetail {
   status:   string;
   species:  string;
   gender:   string;
-  origin:   Location;
-  location: Location;
+  origin:   ILocation;
+  location: ILocation;
   image:    string;
   url:      string;
   created:  Date;
