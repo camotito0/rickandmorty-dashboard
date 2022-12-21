@@ -1,5 +1,17 @@
 <div class="container">
   <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li  class="nav-item active">
+            <a [routerLink]="['/about']" class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row">
     <form [formGroup]="characterForm" *ngIf="filteredCharacters">
       <div class="row">
         <div class="col d-flex">
@@ -32,6 +44,7 @@
     </form>
   </div>
   <div class="row">
+    <h2 class="font-weight-bold pink-lighter-hover mb-5 mt-5 text-center">Search characters from Rick and Morty!</h2>
     <section class="container d-flex align-content-center flex-wrap">
       <app-card class="mx-3" *ngFor="let character of filteredCharacters"
         [character]="character">

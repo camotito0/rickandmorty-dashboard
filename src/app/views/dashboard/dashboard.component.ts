@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { RickandmortyApiService } from 'src/app/services/rickandmorty-api.service';
 import { Character, Result } from '../../models/character';
