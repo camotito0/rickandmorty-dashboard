@@ -1,8 +1,43 @@
+<div class="container">
+  <div class="row">
+    <form [formGroup]="characterForm" *ngIf="filteredCharacters">
+      <div class="row">
+        <div class="col d-flex">
+          <label for="inputEmail3" class="col-sm-4 col-form-label">Seacrh</label>
+          <input formControlName="characterName" type="text" class="form-control" placeholder="Seacrh by name">
+        </div>
+        <div class="col d-flex">
+          <label for="inputEmail3" class="col-sm-4 col-form-label">Status</label>
+          <select  formControlName="status" class="form-select" aria-label="Default select example">
+            <option value="0"></option>
+            <option value="Alive">Alive</option>
+            <option value="Dead">Dead</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </div>
+        <div class="col d-flex">
+          <label for="inputEmail3" class="col-sm-4 col-form-label">Gender</label>
+          <select  formControlName="gender" class="form-select" aria-label="Default select example">
+            <option value="0"></option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </div>
+        <div class="col d-flex">
+          <button (click)="searchCharacter()" type="submit" class="btn btn-primary mx-3">Search</button>
+          <button (click)="cleanForm()" class="btn btn-secondary" >Clean</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="row">
+    <section class="container d-flex align-content-center flex-wrap">
+      <app-card class="mx-3" *ngFor="let character of filteredCharacters"
+        [character]="character">
+      </app-card>
+    </section>
+  </div>
 
-<input placeholder="Search by name" />
+</div>
 
-<section>
-  <app-card *ngFor="let character of characters"
-    [character]="character">
-  </app-card>
-</section>

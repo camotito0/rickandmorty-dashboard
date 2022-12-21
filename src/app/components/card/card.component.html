@@ -1,10 +1,12 @@
-<div>
-  <img src={{character.image}} alt={{character.name}}/>
-  <p>{{character.name}}</p>
-  <p>status: {{character.status}}</p>
-  <p>species: {{character.species}}</p>
-  <p>gender: {{character.gender}}</p>
-  <p>origin: {{character.origin.name}}</p>
-  <p>location: {{character.location.name}}</p>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src={{character.image}} alt={{character.name}}>
+  <div class="card-body">
+    <p class="card-text">{{character.name}}</p>
+    <p class="card-text">status: {{character.status}}</p>
+    <p class="card-text">species: {{character.species}}</p>
+    <p class="card-text">gender: {{character.gender}}</p>
+    <p class="card-text">origin: {{character.origin.name}}</p>
+    <p class="card-text">location: {{character.location.name}}</p>
+  </div>
 </div>
 
