@@ -9,6 +9,4 @@ export class CardComponent {
 
   @Input() character: any
 
-  constructor() {}
-
 }
