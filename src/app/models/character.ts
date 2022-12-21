@@ -39,6 +39,7 @@ export class Character {
 }
 
 export class Result {
+  id: number;
   name: string;
   status: string;
   species: string;
@@ -48,6 +49,7 @@ export class Result {
   image: string;
 
   constructor(result: IResult) {
+    this.id = result.id;
     this.name = result.name;
     this.status = result.status;
     this.species = result.species;

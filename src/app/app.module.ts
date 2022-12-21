@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './components/about/about.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { CharacterDetailComponent } from './components/character-detail/character-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     CardComponent,
     DashboardComponent,
     AboutComponent,
+    CharacterDetailComponent,
   ],
   imports: [
     BrowserModule,
